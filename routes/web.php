@@ -19,5 +19,5 @@ Route::get('/categories',[MainController::class, 'categories'])->name('categorie
 Route::get('/{category}',[MainController::class, 'category'])->name('category');
 Route::get('/mobiles/{product?}',[MainController::class, 'product'])->name('product');
 Route::get('/basket', [MainController::class, 'basket'])->name('basket');
-
+Route::get('/basket/place', [MainController::class, 'basketPlace'])->name('basket-place');
 
